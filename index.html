@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Miles & Kilometers converter</title>
+        <!--  normalise css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 id="heading">Miles to kilometers Convereter</h1>
+
+        <div class="container top">
+            <p id="intro">Enter the number of Miles and click the button to convert it into Kilometers</p>
+
+            <form method="post" action="somephpfile.php" id="convert">
+                <input type="text" name="distance" id="distance" placeholder="Enter Distance" />
+                <input type="submit" name="convertdist" id="button" value="Convert Distance" />
+            </form>
+        </div>
+
+        <div class="container bottom" id="answer">
+            <h2 class="invisible">Answer goes here</h2>
+        </div>
+        <p id="direction">Press key "K" to swith to kilometer conversion , Press key "M" to swith to miles conversion</p>
+
+    </body>
+</html>
