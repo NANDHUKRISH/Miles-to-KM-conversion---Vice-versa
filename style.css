@@ -27,15 +27,20 @@ h2{
 }
 .container{
     width:70%;
+    min-height: 10vh;
     margin: auto;
     padding:20px;
     text-align: center;
 }
 
 .top{
-    background:#EBF6BE;
+    border-radius: 10px 10px 0 0;
+    background:#EBF6BE; 
 }
 .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#AABCCC;
 }
 p{
@@ -51,8 +56,14 @@ p{
     text-align: center;
     background-color:aliceblue;
     border:none;
+    outline: none;
     margin: 10px;
     border-radius: 8px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 #button{
     width:30%;
@@ -63,13 +74,13 @@ p{
     border-radius: 5px;
     font-size: 100%;
     font-weight: 600;
-    background:rgb(124, 213, 188);
+    background:rgb(100, 174, 162);
     color:white;
     border:none;
 }
 #button:hover {
     background:rgb(232, 189, 232);
-    color:rgb(185, 41, 166);
+    color:rgb(56, 10, 50);
 }
 
 #direction{
